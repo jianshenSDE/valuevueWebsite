@@ -20,21 +20,17 @@ const services = [
   },
   {
     title: 'Portfolio Valuations',
-    description: 'Multi-property and multi-state portfolio appraisals for institutional lenders, investors, and corporate clients.',
+    description: 'Multi-property portfolio appraisals for institutional lenders, investors, and corporate clients.',
   },
   {
     title: 'Consulting & Advisory',
     description: 'Market studies, feasibility analysis, highest and best use studies, and strategic real estate advisory services.',
   },
-  {
-    title: 'Financial Reporting Valuations',
-    description: 'Purchase price allocation and fair value assessments for mergers, acquisitions, and financial reporting compliance.',
-  },
 ];
 
 const trustPoints = [
-  { label: 'MAI Designated', detail: 'Member of the Appraisal Institute since 2022' },
-  { label: 'Texas Certified', detail: 'State Certified General Real Estate Appraiser since 2018' },
+  { label: 'MAI Designated', detail: 'Member of the Appraisal Institute' },
+  { label: 'Texas Certified', detail: 'State Certified General Real Estate Appraiser' },
   { label: 'Decade of Experience', detail: 'Over a decade of commercial appraisal expertise' },
   { label: 'Diverse Property Types', detail: 'Retail, industrial, office, hospitality, land, and more' },
 ];

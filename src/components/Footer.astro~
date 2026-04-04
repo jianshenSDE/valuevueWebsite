@@ -40,6 +40,9 @@ const currentYear = new Date().getFullYear();
           <li>
             <a href="mailto:info@valuevuellc.com" class="hover:text-white transition-colors">info@valuevuellc.com</a>
           </li>
+          <li>
+            <a href="tel:+1-000-000-0000" class="hover:text-white transition-colors">+1 (000) 000-0000</a>
+          </li>
         </ul>
       </div>
     </div>
