@@ -20,11 +20,15 @@ const services = [
   },
   {
     title: 'Portfolio Valuations',
-    description: 'Multi-property portfolio appraisals for institutional lenders, investors, and corporate clients.',
+    description: 'Multi-property and multi-state portfolio appraisals for institutional lenders, investors, and corporate clients.',
   },
   {
     title: 'Consulting & Advisory',
     description: 'Market studies, feasibility analysis, highest and best use studies, and strategic real estate advisory services.',
+  },
+  {
+    title: 'Financial Reporting Valuations',
+    description: 'Purchase price allocation and fair value assessments for mergers, acquisitions, and financial reporting compliance.',
   },
 ];
 

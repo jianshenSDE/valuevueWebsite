@@ -38,9 +38,7 @@ const isHome = variant === 'home';
       <h1 class:list={[
         'font-heading font-bold text-white leading-tight',
         isHome ? 'text-4xl md:text-5xl lg:text-6xl' : 'text-3xl md:text-4xl lg:text-5xl',
-      ]}>
-        {title}
-      </h1>
+      ]} set:html={title.replace(/&/g, '<span class="font-sans">&amp;</span>')} />
       {description && (
         <p class:list={[
           'mt-6 text-brand-100 leading-relaxed',
