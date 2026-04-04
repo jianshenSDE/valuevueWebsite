@@ -44,9 +44,6 @@ const coursework = [
           <p class="text-brand-600 leading-relaxed mb-4">
             Our firm is built on a foundation of analytical rigor, regulatory compliance, and market expertise. We adhere strictly to industry standards and bring a deep understanding of local and regional real estate markets to every engagement.
           </p>
-          <p class="text-brand-600 leading-relaxed">
-            Placeholder — additional company overview content.
-          </p>
         </div>
         <div class="bg-brand-50 rounded-2xl p-12 flex items-center justify-center min-h-[320px]">
           <p class="text-brand-400 text-sm text-center">[ Company or office photo placeholder ]</p>
@@ -76,16 +73,7 @@ const coursework = [
 
           <div class="space-y-4 text-brand-600 leading-relaxed">
             <p>
-              "Zoe" Ying Zhang is the Chief Appraiser and founder of ValueVue LLC. With a career spanning over a decade in the commercial appraisal industry, Ms. Zhang has been a Texas State Certified General Appraiser since 2018 and obtained her MAI (Member of the Appraisal Institute) designation in 2022.
-            </p>
-            <p>
-              Since entering the field in 2013, Ms. Zhang has appraised a wide range of commercial properties across various sectors, including retail complexes, industrial facilities, office buildings, multi-family developments, subdivisions, hotels, farm and ranch, vacant land, RV parks, mobile home parks, self-storage facilities, religious venues, and event centers.
-            </p>
-            <p>
-              In addition to her appraisal work, she has conducted in-depth internal reviews of appraisal reports submitted by junior appraisers, ensuring quality control and strict compliance with USPAP and other regulatory standards. She also provides third-party appraisal reviews to enhance the reliability and consistency of valuation practices in the industry.
-            </p>
-            <p>
-              Prior to ValueVue, Ms. Zhang was a Managing Partner at David E. Jones and Associates LLC and a Managing Director of BBG, Inc Austin office.
+              "Zoe" Ying Zhang is a commercial real estate appraisal firm based in Texas, founded by "Zoe" Ying Zhang, MAI. With over a decade of experience in the commercial appraisal industry, Ms. Zhang has appraised a wide range of property types including retail complexes, industrial facilities, office buildings, multi-family developments, hotels, farm and ranch land, and special-use properties
             </p>
           </div>
         </div>
@@ -107,7 +95,7 @@ const coursework = [
               </svg>
               <div>
                 <span class="font-medium text-brand-800">MAI Designation</span>
-                <p class="text-sm text-brand-500">Member of the Appraisal Institute (since 2022)</p>
+                <p class="text-sm text-brand-500">Member of the Appraisal Institute</p>
               </div>
             </li>
             <li class="flex items-start gap-3">
@@ -116,7 +104,6 @@ const coursework = [
               </svg>
               <div>
                 <span class="font-medium text-brand-800">Certified General Appraiser</span>
-                <p class="text-sm text-brand-500">Texas, TX-1380829-G (since 2018)</p>
               </div>
             </li>
           </ul>
@@ -128,15 +115,7 @@ const coursework = [
           <ul class="space-y-4">
             <li>
               <span class="font-medium text-brand-800">Master of Public Affairs</span>
-              <p class="text-sm text-brand-500">LBJ School of Public Affairs, The University of Texas at Austin (2011–2013)</p>
-            </li>
-            <li>
-              <span class="font-medium text-brand-800">Portfolio Program in Applied Statistical Modeling</span>
-              <p class="text-sm text-brand-500">College of Natural Sciences, The University of Texas at Austin (2011–2013)</p>
-            </li>
-            <li>
-              <span class="font-medium text-brand-800">B.A. in International Studies</span>
-              <p class="text-sm text-brand-500">Renmin University of China (2007–2011)</p>
+              <p class="text-sm text-brand-500">LBJ School of Public Affairs, The University of Texas at Austin</p>
             </li>
           </ul>
         </div>
@@ -147,9 +126,6 @@ const coursework = [
           <div class="space-y-4 text-brand-600 leading-relaxed">
             <p>
               We combine rigorous analytical methodology with deep market knowledge to deliver valuations that are accurate, defensible, and compliant with all applicable standards.
-            </p>
-            <p>
-              Placeholder — additional approach and methodology content.
             </p>
           </div>
         </div>
