@@ -65,7 +65,7 @@ const clientTypes = [
   'Institutional Lenders',
   'Attorneys & Law Firms',
   'Corporate Clients',
-  'Real Estate Developers & Brokers',
+  'Real Estate Developers and Brokers',
   'Government Agencies',
   'Portfolio Management Firms',
   'Insurance Companies',

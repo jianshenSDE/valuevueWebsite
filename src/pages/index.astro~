@@ -41,7 +41,7 @@ const trustPoints = [
   <Hero
     variant="home"
     subtitle="Commercial Real Estate Appraisal & Advisory"
-    title="Trusted Valuations. Clear Insights."
+    title="Trusted Valuations. \nClear Insights."
     description="ValueVue LLC delivers reliable commercial real estate appraisals and advisory services across Texas. Led by an MAI-designated appraiser with over a decade of industry expertise."
     ctaText="Schedule a Consultation"
     ctaHref="/contact"
@@ -109,9 +109,6 @@ const trustPoints = [
           </h2>
           <p class="text-brand-600 leading-relaxed mb-4">
             ValueVue LLC is a commercial real estate appraisal firm based in Texas, founded by "Zoe" Ying Zhang, MAI. With over a decade of experience in the commercial appraisal industry, Ms. Zhang has appraised a wide range of property types including retail complexes, industrial facilities, office buildings, multi-family developments, hotels, farm and ranch land, and special-use properties.
-          </p>
-          <p class="text-brand-600 leading-relaxed mb-6">
-            Prior to founding ValueVue, Ms. Zhang served as Managing Partner at David E. Jones and Associates LLC and Managing Director of BBG, Inc Austin office.
           </p>
           <a
             href="/about"
