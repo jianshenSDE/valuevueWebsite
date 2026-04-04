@@ -6,15 +6,7 @@ Built with **Astro**, **Tailwind CSS**, and configured for **Netlify** deploymen
 
 ---
 
-> ⚠️ **IMPORTANT: Search engines are currently BLOCKED.**
->
-> The site has a `noindex, nofollow` meta tag in `src/layouts/BaseLayout.astro` to prevent
-> Google from indexing it while in development. **When you are ready to go public, remove
-> this line from `BaseLayout.astro`:**
->
-> ```html
-> <meta name="robots" content="noindex, nofollow" />
-> ```
+✅ **Search engines are ENABLED.** The site is fully indexable by Google and other search engines.
 
 ---
 
