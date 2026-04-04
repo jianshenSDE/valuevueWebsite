@@ -33,13 +33,24 @@ const structuredData = {
   'email': 'info@valuevuellc.com',
   'address': {
     '@type': 'PostalAddress',
+    'addressLocality': 'Austin',
     'addressRegion': 'TX',
     'addressCountry': 'US',
   },
-  'areaServed': {
-    '@type': 'State',
-    'name': 'Texas',
-  },
+  'areaServed': [
+    { '@type': 'City', 'name': 'Austin', 'sameAs': 'https://en.wikipedia.org/wiki/Austin,_Texas' },
+    { '@type': 'City', 'name': 'Waco', 'sameAs': 'https://en.wikipedia.org/wiki/Waco,_Texas' },
+    { '@type': 'City', 'name': 'Georgetown' },
+    { '@type': 'City', 'name': 'Cedar Park' },
+    { '@type': 'City', 'name': 'Pflugerville' },
+    { '@type': 'City', 'name': 'Killeen' },
+    { '@type': 'City', 'name': 'Temple' },
+    { '@type': 'City', 'name': 'Leander' },
+    { '@type': 'City', 'name': 'Manor' },
+    { '@type': 'City', 'name': 'Elgin' },
+    { '@type': 'City', 'name': 'Lampasas' },
+    { '@type': 'State', 'name': 'Texas' },
+  ],
   'founder': {
     '@type': 'Person',
     'name': 'Zoe Ying Zhang',
@@ -47,6 +58,10 @@ const structuredData = {
   },
   'knowsAbout': [
     'Commercial Real Estate Appraisal',
+    'Commercial Appraiser Austin',
+    'MAI Appraiser Austin',
+    'MAI Appraiser Waco',
+    'Central Texas Commercial Appraisal',
     'Appraisal Review Services',
     'Litigation Support',
     'Expert Witness Testimony',
@@ -67,7 +82,7 @@ const structuredData = {
     <meta name="robots" content="index, follow" />
     <meta name="author" content="ValueVue LLC" />
     <meta name="geo.region" content="US-TX" />
-    <meta name="geo.placename" content="Texas" />
+    <meta name="geo.placename" content="Austin, Texas" />
 
     <!-- Open Graph -->
     <meta property="og:site_name" content="ValueVue LLC" />
