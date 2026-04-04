@@ -3,20 +3,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import CTA from '../components/CTA.astro';
 
-const coursework = [
-  { year: '2026', course: 'Online Analyzing Operating Expenses', hours: 7 },
-  { year: '2025', course: 'Texas Supervisory Trainee/Appraiser Trainee Course', hours: 4 },
-  { year: '2024', course: 'Appraisal of Self-Storage Facilities', hours: 7 },
-  { year: '2024', course: "Appraiser's Guide to Expert Witnessing", hours: 7 },
-  { year: '2024', course: 'Online Small Hotel/Motel Valuation', hours: 7 },
-  { year: '2024', course: '2024-2025 7-Hour Equivalent USPAP Update', hours: 7 },
-  { year: '2022', course: 'Online Appraisal of Medical Office Buildings', hours: 7 },
-  { year: '2022', course: 'Eminent Domain and Condemnation', hours: 7 },
-  { year: '2022', course: 'Online Appraising Automobile Dealerships', hours: 7 },
-  { year: '2022', course: '2022-2023 7-Hour National USPAP Update Course', hours: 7 },
-  { year: '2020', course: 'Advanced Concepts and Case Studies', hours: 40 },
-  { year: '2019', course: 'Advanced Market Analysis and Highest & Best Use', hours: 35 },
-];
 ---
 
 <BaseLayout
@@ -67,13 +53,13 @@ const coursework = [
         <div class="lg:col-span-2">
           <p class="text-brand-500 text-sm font-semibold uppercase tracking-widest mb-2">Leadership</p>
           <h2 class="text-3xl md:text-4xl font-heading font-bold text-brand-900 mb-2">
-            "Zoe" Ying Zhang, MAI
+            Zoe Ying Zhang, MAI
           </h2>
           <p class="text-brand-500 font-medium mb-6">Chief Appraiser &amp; Founder</p>
 
           <div class="space-y-4 text-brand-600 leading-relaxed">
             <p>
-              "Zoe" Ying Zhang is a commercial real estate appraisal firm based in Texas, founded by "Zoe" Ying Zhang, MAI. With over a decade of experience in the commercial appraisal industry, Ms. Zhang has appraised a wide range of property types including retail complexes, industrial facilities, office buildings, multi-family developments, hotels, farm and ranch land, and special-use properties
+              Zoe Zhang is a commercial real estate appraisal firm based in Texas, founded by Zoe Zhang, MAI. With over a decade of experience in the commercial appraisal industry, Ms. Zhang has appraised a wide range of property types including retail complexes, industrial facilities, office buildings, multi-family developments, hotels, farm and ranch land, and special-use properties
             </p>
           </div>
         </div>
@@ -103,7 +89,7 @@ const coursework = [
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
               <div>
-                <span class="font-medium text-brand-800">Certified General Appraiser</span>
+                <span class="font-medium text-brand-800">Texas State Certified General Appraiser</span>
               </div>
             </li>
           </ul>
@@ -128,38 +114,6 @@ const coursework = [
               We combine rigorous analytical methodology with deep market knowledge to deliver valuations that are accurate, defensible, and compliant with all applicable standards.
             </p>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Recent Coursework -->
-  <section class="py-20 md:py-28 bg-brand-50">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="max-w-4xl mx-auto">
-        <p class="text-brand-500 text-sm font-semibold uppercase tracking-widest mb-2 text-center">Continuing Education</p>
-        <h2 class="text-3xl md:text-4xl font-heading font-bold text-brand-900 mb-8 text-center">
-          Recent Appraisal Coursework
-        </h2>
-        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
-          <table class="w-full">
-            <thead>
-              <tr class="bg-brand-800 text-white text-left">
-                <th class="px-6 py-3 text-sm font-semibold">Year</th>
-                <th class="px-6 py-3 text-sm font-semibold">Course</th>
-                <th class="px-6 py-3 text-sm font-semibold text-right">Hours</th>
-              </tr>
-            </thead>
-            <tbody>
-              {coursework.map((item, i) => (
-                <tr class:list={[i % 2 === 0 ? 'bg-white' : 'bg-brand-50']}>
-                  <td class="px-6 py-3 text-sm text-brand-600 font-medium">{item.year}</td>
-                  <td class="px-6 py-3 text-sm text-brand-700">{item.course}</td>
-                  <td class="px-6 py-3 text-sm text-brand-600 text-right">{item.hours}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
         </div>
       </div>
     </div>
