@@ -1,0 +1,67 @@
+---
+export interface Props {
+  title: string;
+  subtitle?: string;
+  description?: string;
+  ctaText?: string;
+  ctaHref?: string;
+  variant?: 'home' | 'page';
+}
+
+const {
+  title,
+  subtitle,
+  description,
+  ctaText,
+  ctaHref = '/contact',
+  variant = 'page',
+} = Astro.props;
+
+const isHome = variant === 'home';
+---
+
+<section class:list={[
+  'relative overflow-hidden',
+  isHome ? 'py-28 md:py-40' : 'py-20 md:py-28',
+]}>
+  <!-- Background -->
+  <div class="absolute inset-0 bg-gradient-to-br from-brand-900 via-brand-800 to-brand-700"></div>
+  <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.15%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')]"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
+    <div class:list={[
+      isHome ? 'max-w-3xl' : 'max-w-2xl',
+    ]}>
+      {subtitle && (
+        <p class="text-brand-200 text-sm font-semibold uppercase tracking-widest mb-4">{subtitle}</p>
+      )}
+      <h1 class:list={[
+        'font-heading font-bold text-white leading-tight',
+        isHome ? 'text-4xl md:text-5xl lg:text-6xl' : 'text-3xl md:text-4xl lg:text-5xl',
+      ]}>
+        {title}
+      </h1>
+      {description && (
+        <p class:list={[
+          'mt-6 text-brand-100 leading-relaxed',
+          isHome ? 'text-lg md:text-xl' : 'text-base md:text-lg',
+        ]}>
+          {description}
+        </p>
+      )}
+      {ctaText && (
+        <div class="mt-8">
+          <a
+            href={ctaHref}
+            class="inline-flex items-center px-8 py-3.5 bg-white text-brand-800 font-semibold rounded-md hover:bg-brand-50 transition-colors shadow-lg"
+          >
+            {ctaText}
+            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </div>
+      )}
+    </div>
+  </div>
+</section>

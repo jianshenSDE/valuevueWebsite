@@ -1,0 +1,197 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import CTA from '../components/CTA.astro';
+
+const coursework = [
+  { year: '2026', course: 'Online Analyzing Operating Expenses', hours: 7 },
+  { year: '2025', course: 'Texas Supervisory Trainee/Appraiser Trainee Course', hours: 4 },
+  { year: '2024', course: 'Appraisal of Self-Storage Facilities', hours: 7 },
+  { year: '2024', course: "Appraiser's Guide to Expert Witnessing", hours: 7 },
+  { year: '2024', course: 'Online Small Hotel/Motel Valuation', hours: 7 },
+  { year: '2024', course: '2024-2025 7-Hour Equivalent USPAP Update', hours: 7 },
+  { year: '2022', course: 'Online Appraisal of Medical Office Buildings', hours: 7 },
+  { year: '2022', course: 'Eminent Domain and Condemnation', hours: 7 },
+  { year: '2022', course: 'Online Appraising Automobile Dealerships', hours: 7 },
+  { year: '2022', course: '2022-2023 7-Hour National USPAP Update Course', hours: 7 },
+  { year: '2020', course: 'Advanced Concepts and Case Studies', hours: 40 },
+  { year: '2019', course: 'Advanced Market Analysis and Highest & Best Use', hours: 35 },
+];
+---
+
+<BaseLayout
+  title="About"
+  description="Learn about ValueVue LLC, a Texas-based commercial real estate appraisal firm founded by Zoe Ying Zhang, MAI."
+>
+  <Hero
+    title="About ValueVue"
+    subtitle="Who We Are"
+    description="A Texas-based commercial real estate appraisal and advisory firm delivering reliable valuations backed by deep market expertise and recognized credentials."
+  />
+
+  <!-- Company Overview -->
+  <section class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <p class="text-brand-500 text-sm font-semibold uppercase tracking-widest mb-2">Our Firm</p>
+          <h2 class="text-3xl md:text-4xl font-heading font-bold text-brand-900 mb-6">
+            Commercial Real Estate Appraisal Excellence
+          </h2>
+          <p class="text-brand-600 leading-relaxed mb-4">
+            ValueVue LLC is a commercial real estate appraisal firm based in Texas, dedicated to delivering high-quality valuation and advisory services. We serve lenders, attorneys, investors, corporate clients, and government agencies with comprehensive appraisal solutions across a wide range of property types.
+          </p>
+          <p class="text-brand-600 leading-relaxed mb-4">
+            Our firm is built on a foundation of analytical rigor, regulatory compliance, and market expertise. We adhere strictly to USPAP standards and bring a deep understanding of local and regional real estate markets to every engagement.
+          </p>
+          <p class="text-brand-600 leading-relaxed">
+            Placeholder — additional company overview content.
+          </p>
+        </div>
+        <div class="bg-brand-50 rounded-2xl p-12 flex items-center justify-center min-h-[320px]">
+          <p class="text-brand-400 text-sm text-center">[ Company or office photo placeholder ]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Principal Appraiser -->
+  <section class="py-20 md:py-28 bg-brand-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+        <!-- Photo Column -->
+        <div class="lg:col-span-1">
+          <div class="bg-white rounded-2xl p-8 flex items-center justify-center min-h-[400px] shadow-sm">
+            <p class="text-brand-400 text-sm text-center">[ Professional headshot placeholder ]</p>
+          </div>
+        </div>
+
+        <!-- Bio Column -->
+        <div class="lg:col-span-2">
+          <p class="text-brand-500 text-sm font-semibold uppercase tracking-widest mb-2">Leadership</p>
+          <h2 class="text-3xl md:text-4xl font-heading font-bold text-brand-900 mb-2">
+            "Zoe" Ying Zhang, MAI
+          </h2>
+          <p class="text-brand-500 font-medium mb-6">Chief Appraiser &amp; Founder</p>
+
+          <div class="space-y-4 text-brand-600 leading-relaxed">
+            <p>
+              "Zoe" Ying Zhang is the Chief Appraiser and founder of ValueVue LLC. With a career spanning over a decade in the commercial appraisal industry, Ms. Zhang has been a Texas State Certified General Appraiser since 2018 and obtained her MAI (Member of the Appraisal Institute) designation in 2022.
+            </p>
+            <p>
+              Since entering the field in 2013, Ms. Zhang has appraised a wide range of commercial properties across various sectors, including retail complexes, industrial facilities, office buildings, multi-family developments, subdivisions, hotels, farm and ranch, vacant land, RV parks, mobile home parks, self-storage facilities, religious venues, and event centers.
+            </p>
+            <p>
+              In addition to her appraisal work, she has conducted in-depth internal reviews of appraisal reports submitted by junior appraisers, ensuring quality control and strict compliance with USPAP and other regulatory standards. She also provides third-party appraisal reviews to enhance the reliability and consistency of valuation practices in the industry.
+            </p>
+            <p>
+              Prior to ValueVue, Ms. Zhang was a Managing Partner at David E. Jones and Associates LLC and a Managing Director of BBG, Inc Austin office.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Credentials -->
+  <section class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <!-- Professional Affiliations -->
+        <div>
+          <h3 class="text-xl font-heading font-bold text-brand-900 mb-6">Professional Affiliations</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+              <div>
+                <span class="font-medium text-brand-800">MAI Designation</span>
+                <p class="text-sm text-brand-500">Member of the Appraisal Institute (since 2022)</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+              <div>
+                <span class="font-medium text-brand-800">Certified General Appraiser</span>
+                <p class="text-sm text-brand-500">Texas, TX-1380829-G (since 2018)</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Education -->
+        <div>
+          <h3 class="text-xl font-heading font-bold text-brand-900 mb-6">Education</h3>
+          <ul class="space-y-4">
+            <li>
+              <span class="font-medium text-brand-800">Master of Public Affairs</span>
+              <p class="text-sm text-brand-500">LBJ School of Public Affairs, The University of Texas at Austin (2011–2013)</p>
+            </li>
+            <li>
+              <span class="font-medium text-brand-800">Portfolio Program in Applied Statistical Modeling</span>
+              <p class="text-sm text-brand-500">College of Natural Sciences, The University of Texas at Austin (2011–2013)</p>
+            </li>
+            <li>
+              <span class="font-medium text-brand-800">B.A. in International Studies</span>
+              <p class="text-sm text-brand-500">Renmin University of China (2007–2011)</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Approach -->
+        <div>
+          <h3 class="text-xl font-heading font-bold text-brand-900 mb-6">Our Approach</h3>
+          <div class="space-y-4 text-brand-600 leading-relaxed">
+            <p>
+              We combine rigorous analytical methodology with deep market knowledge to deliver valuations that are accurate, defensible, and compliant with all applicable standards.
+            </p>
+            <p>
+              Placeholder — additional approach and methodology content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Coursework -->
+  <section class="py-20 md:py-28 bg-brand-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <p class="text-brand-500 text-sm font-semibold uppercase tracking-widest mb-2 text-center">Continuing Education</p>
+        <h2 class="text-3xl md:text-4xl font-heading font-bold text-brand-900 mb-8 text-center">
+          Recent Appraisal Coursework
+        </h2>
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <table class="w-full">
+            <thead>
+              <tr class="bg-brand-800 text-white text-left">
+                <th class="px-6 py-3 text-sm font-semibold">Year</th>
+                <th class="px-6 py-3 text-sm font-semibold">Course</th>
+                <th class="px-6 py-3 text-sm font-semibold text-right">Hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              {coursework.map((item, i) => (
+                <tr class:list={[i % 2 === 0 ? 'bg-white' : 'bg-brand-50']}>
+                  <td class="px-6 py-3 text-sm text-brand-600 font-medium">{item.year}</td>
+                  <td class="px-6 py-3 text-sm text-brand-700">{item.course}</td>
+                  <td class="px-6 py-3 text-sm text-brand-600 text-right">{item.hours}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTA
+    title="Work With a Trusted Appraisal Professional"
+    description="Reach out to learn how ValueVue's expertise can support your commercial real estate needs."
+    buttonText="Contact Us"
+  />
+</BaseLayout>

@@ -1,0 +1,157 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import CTA from '../components/CTA.astro';
+
+const serviceDetails = [
+  {
+    title: 'Commercial Real Estate Appraisals',
+    description: 'We provide comprehensive appraisal services for a wide range of commercial property types across Texas. Our MAI-designated appraiser applies rigorous methodology and deep market knowledge to deliver accurate, defensible valuations.',
+    properties: [
+      'Retail Complexes & Shopping Centers',
+      'Industrial Facilities & Warehouses',
+      'Office Buildings',
+      'Multi-Family Developments',
+      'Hotels & Hospitality',
+      'Farm & Ranch Land',
+      'Vacant Land & Subdivisions',
+      'Self-Storage Facilities',
+      'Mobile Home & RV Parks',
+      'Special-Use Properties',
+    ],
+  },
+  {
+    title: 'Appraisal Review Services',
+    description: 'Our review services ensure the quality, accuracy, and regulatory compliance of appraisal reports. We conduct both internal and third-party reviews to support quality control programs for lenders, investors, and government agencies.',
+    items: [
+      'Desk Reviews & Field Reviews',
+      'USPAP Compliance Assessment',
+      'Quality Control Programs',
+      'Regulatory Review Support',
+    ],
+  },
+  {
+    title: 'Litigation Support & Expert Witness',
+    description: 'We provide expert testimony and forensic valuation analysis for real property disputes. Our team supports legal counsel with research, evidence, and strategic guidance in contested valuations and damage assessments.',
+    items: [
+      'Expert Witness Testimony',
+      'Condemnation & Eminent Domain',
+      'Partnership Dissolution',
+      'Tax Appeals',
+      'Bankruptcy Proceedings',
+      'Civil Litigation',
+    ],
+  },
+  {
+    title: 'Portfolio Valuations',
+    description: 'For institutional lenders, investors, and corporate clients managing multi-property holdings, we deliver efficient and reliable portfolio appraisals covering single-state and multi-state engagements.',
+    items: [
+      'Multi-Property Portfolio Appraisals',
+      'Asset-Based Lending Advisory',
+      'Institutional Lender Support',
+      'Corporate Real Estate Valuations',
+    ],
+  },
+  {
+    title: 'Consulting & Advisory',
+    description: 'Our advisory services help clients understand market dynamics, evaluate opportunities, and make informed real estate decisions. We provide objective, data-driven insights across a range of consulting engagements.',
+    items: [
+      'Market Studies & Feasibility Analysis',
+      'Highest & Best Use Studies',
+      'Rent Reasonableness Analysis',
+      'Investment Advisory',
+    ],
+  },
+  {
+    title: 'Financial Reporting Valuations',
+    description: 'We conduct purchase price allocation analyses and fair value assessments to support financial reporting compliance for mergers, acquisitions, and corporate transactions.',
+    items: [
+      'Purchase Price Allocation (ASC 805)',
+      'Fair Value Measurement',
+      'Leasehold Analysis',
+      'Impairment Testing Support',
+    ],
+  },
+];
+
+const clientTypes = [
+  'Banks & Credit Unions',
+  'Institutional Lenders',
+  'Attorneys & Law Firms',
+  'Corporate Clients',
+  'Real Estate Developers',
+  'Government Agencies',
+  'Portfolio Management Firms',
+  'Insurance Companies',
+  'Small Business Administration (SBA)',
+  'Family Offices',
+  'Mortgage Bankers & Brokers',
+  'Special Servicers',
+];
+---
+
+<BaseLayout
+  title="Services"
+  description="ValueVue LLC offers comprehensive commercial real estate appraisal, review, litigation support, and advisory services across Texas."
+>
+  <Hero
+    title="Our Services"
+    subtitle="What We Offer"
+    description="Comprehensive commercial real estate valuation and advisory solutions tailored to the needs of lenders, attorneys, investors, and property owners."
+  />
+
+  <!-- Service Detail Sections -->
+  {serviceDetails.map((service, index) => (
+    <section class:list={['py-16 md:py-20', index % 2 === 0 ? 'bg-white' : 'bg-brand-50']}>
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-heading font-bold text-brand-900 mb-4">
+              {service.title}
+            </h2>
+            <p class="text-brand-600 leading-relaxed text-lg">
+              {service.description}
+            </p>
+          </div>
+          <div>
+            <ul class="space-y-3">
+              {(service.properties || service.items || []).map((item) => (
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-brand-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-brand-700">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- Clients We Serve -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <SectionHeading
+        subtitle="Who We Serve"
+        title="Clients & Industries"
+        description="We deliver appraisal and advisory services to a broad range of clients across the financial, legal, and real estate sectors."
+      />
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {clientTypes.map((client) => (
+          <div class="bg-brand-50 rounded-lg px-5 py-4 text-center">
+            <span class="text-sm font-medium text-brand-700">{client}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CTA
+    title="Need a Valuation or Advisory Engagement?"
+    description="Reach out to discuss your project requirements and learn how ValueVue can support your needs."
+    buttonText="Contact Us"
+  />
+</BaseLayout>
