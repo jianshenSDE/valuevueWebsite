@@ -30,19 +30,21 @@ const isHome = variant === 'home';
 
   <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
     <div class:list={[
-      isHome ? 'max-w-3xl' : 'max-w-2xl',
+      isHome ? 'max-w-4xl mx-auto text-center' : 'max-w-2xl',
     ]}>
       {subtitle && (
         <p class="text-brand-200 text-sm font-semibold uppercase tracking-widest mb-4">{subtitle}</p>
       )}
       <h1 class:list={[
         'font-heading font-bold text-white leading-tight',
-        isHome ? 'text-4xl md:text-5xl lg:text-6xl' : 'text-3xl md:text-4xl lg:text-5xl',
-      ]} set:html={title.replace(/&/g, '<span class="font-sans">&amp;</span>')} />
+        isHome ? 'text-4xl md:text-5xl lg:text-6xl lg:whitespace-nowrap' : 'text-3xl md:text-4xl lg:text-5xl',
+      ]}>
+        {title}
+      </h1>
       {description && (
         <p class:list={[
           'mt-6 text-brand-100 leading-relaxed',
-          isHome ? 'text-lg md:text-xl' : 'text-base md:text-lg',
+          isHome ? 'text-lg md:text-xl max-w-2xl mx-auto' : 'text-base md:text-lg',
         ]}>
           {description}
         </p>

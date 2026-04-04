@@ -13,7 +13,7 @@ const { title, subtitle, description, centered = true } = Astro.props;
   {subtitle && (
     <p class="text-brand-500 text-sm font-semibold uppercase tracking-widest mb-2">{subtitle}</p>
   )}
-  <h2 class="text-3xl md:text-4xl font-heading font-bold text-brand-900" set:html={title.replace(/&/g, '<span class="font-sans">&amp;</span>')} />
+  <h2 class="text-3xl md:text-4xl font-heading font-bold text-brand-900">{title}</h2>
   {description && (
     <p class:list={[
       'mt-4 text-brand-600 leading-relaxed text-lg',
